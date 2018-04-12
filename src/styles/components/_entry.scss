@@ -1,0 +1,55 @@
+.entry {
+  border-bottom: 1px solid $pale-pink;
+  padding: $m-size $s-size;
+  display: block;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-left: 35px;
+
+  &:hover {
+    background-color: $pale-pink;
+  }
+
+  &:hover:after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: no-repeat url("/images/edit.png");
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}
+
+.entry-date {
+  font-size: 10px;
+  color: gray;
+}
+
+//---------- Icons -------------
+
+.icon-mini {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-favorites-checked {
+  background-image: url("/images/favorites-check.png");
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
+.icon-important-checked {
+  background-image: url("/images/important-check.png");
+  position: absolute;
+  left: 5px;
+  top: 50px;
+}

@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: $font-base;
+  font-size: $m-size;
+  background-image: url('/images/worn_dots.png');
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+input, textarea {
+  width: 100%;
+  font-family: inherit;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 2px solid $dark-pink;
+}
+
+h1, h2, h3 {
+  font-family: $font-titles;
+  margin-top: 0;
+}

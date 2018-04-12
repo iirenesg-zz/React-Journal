@@ -1,0 +1,8 @@
+.double-col {
+  display: flex;
+  justify-content: center;
+}
+
+.double-col div {
+  margin: 0 $m-size;
+}

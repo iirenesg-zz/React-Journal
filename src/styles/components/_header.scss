@@ -1,0 +1,81 @@
+header {
+  background-color: $pale-pink;
+  width: 50px;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0 10px 10px 0;
+
+  a {
+    display: block;
+    height: 30%;
+    text-align: center;
+    position: relative;
+  }
+
+  .icon-menu {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+    right: 0;
+  }
+
+  a.is-active span {
+    background-color: #fff;
+    border: 10px solid #fff;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    transition: right .3s;
+    right: -15px;
+  }
+}
+
+// ------- Icons --------
+
+.icon-menu {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-dashboard {
+  background-image: url("/images/dashboard.png");
+}
+
+.icon-favorites {
+  background-image: url("/images/favorites.png");
+}
+
+.icon-important {
+  background-image: url("/images/important.png");
+}
+
+@media (min-width: 450px) {
+  header {
+    width: 90px;
+
+    a.is-active span {
+      right: -30px;
+    }
+  }
+  .icon-menu {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    width: 125px;
+  }
+  .icon-menu {
+    width: 75px;
+    height: 75px;
+  }
+}

@@ -1,0 +1,40 @@
+.button {
+  background-color: $pink;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $dark-pink;
+  }
+}
+
+.button-big {
+  padding: 15px 25px;
+}
+
+.button-small {
+  padding: 10px 10px 5px;
+}
+
+.button-text {
+  position: relative;
+  top: -4px;
+}
+
+// -------- Button Icons --------
+
+.icon-small {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.icon-new {
+  background-image: url("/images/add.png");
+}

@@ -1,0 +1,62 @@
+.input-box {
+  margin-bottom: $s-size;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.button-box {
+  text-align: center;
+  margin-top: $l-size;
+}
+
+// ------- Date widget ---------
+
+.DateInput {
+  font-size: inherit;
+}
+
+.SingleDatePickerInput {
+  border: 2px solid $dark-pink;
+}
+
+.date-picker-form .SingleDatePicker, .date-picker-form .SingleDatePickerInput, .date-picker-form .DateInput {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// ------- Custom checkboxes ---------
+
+.checkbox-hidden {
+  visibility: hidden;
+}
+
+.checkbox-label:after {
+  width: 30px;
+  height: 30px;
+  content: '';
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 10px;
+  top: 10px;
+}
+
+.checkbox-favorite + .checkbox-label:after {
+  background-image: url("/images/favorites.png");
+}
+
+.checkbox-important + .checkbox-label:after {
+  background-image: url("/images/important.png");
+}
+
+.checkbox-favorite:checked + .checkbox-label:after {
+  background-image: url("/images/favorites-check.png");
+}
+
+.checkbox-important:checked + .checkbox-label:after {
+  background-image: url("/images/important-check.png");
+}

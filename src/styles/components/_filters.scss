@@ -1,0 +1,61 @@
+.filters-container {
+  margin-top: $m-size;
+  background-color: $pale-yellow;
+  padding: $s-size;
+}
+
+.filter-box {
+  margin: 10px 0 20px;
+
+  span {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .DateRangePicker {
+    width: 100%;
+  }
+
+  .DateRangePickerInput {
+    border: 2px solid $dark-pink;
+  }
+}
+
+@media (min-width: 900px) {
+  .filter-box {
+    display: flex;
+    margin: 10px 0;
+
+    span {
+      width: 25%;
+      margin: 0 10px 0 0;
+    }
+  }
+  .filter-date-label {
+    position: relative;
+    top: 15px;
+  }
+}
+
+@media (max-width: 649px) {
+  .filters-container {
+    margin-top: $l-size;
+  }
+
+  .filter-box .DateRangePickerInput, .filter-box .DateInput {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .filter-box .DateRangePickerInput__arrow {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+  .filter-box .DateRangePickerInput__clear-dates {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+}
